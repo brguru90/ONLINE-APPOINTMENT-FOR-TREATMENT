@@ -1,0 +1,90 @@
+<html>
+<head>
+<title> UPDATE </title>
+	<link rel="stylesheet" type="text/css" href="css/style1.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/style3.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" media="all" />
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<script src="js/jquery.min.js"></script>
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body class="bg">
+<div class="container">
+			<div class="home">
+					<a href="index.html"><img src="images/home.png" alt="" /></a>
+			</div>
+			<div class="header-top">
+			<div class="top-menu">
+					<ul>
+					<nav class="cl-effect-13">
+						<li><a href="insert.html">CREATE</a></li>
+						<li><a href="update.html">UPDATE</a></li>
+						<li><a href="view.html">VIEW</a></li>
+						<li><a href="delete.html">DELETE</a></li>
+					</nav>
+					</ul>
+			</div>
+
+		</div><br />	<center><h2 style="font-family:algerian; font-size:40px; color:blue"> UPDATE EXISTING PATIENT RECORD </h2></center>
+	
+	<div  class="form" style="top:-20px">
+<form id="contactform" action="update.php" method="post"  enctype="multipart/form-data"> 
+					
+    			<p class="contact"><label for="name">Patient Name</label></p> 
+    			<input id="name" name="pname" placeholder="First and last name" required="" tabindex="1" type="text"> 
+    			 
+				 <p class="contact"><label for="father">Father Name</label></p> 
+    			<input type="text" id="name" name="fname" placeholder="Father" required="">
+				
+				<p class="contact"><label for="id">Patient ID</label></p> 
+    			<input id="" name="pid" placeholder="Number" required="" type="text"> 
+				
+				<p class="contact"><label for="email">Email</label></p> 
+    			<input id="email" name="email" placeholder="Email" required="" type="email"> 
+                
+                <p class="contact"><label for="repassword">Addrress</label></p> 
+    			<input type="text" id="" name="add" required=""> 
+        
+               <fieldset>
+                 <label>Birthday</label>
+                  <label class="month"> 
+                  <select class="select-style" name="month">
+                  <option value="">Month</option>
+                  <option  value="01">January</option>
+                  <option value="02">February</option>
+                  <option value="03" >March</option>
+                  <option value="04">April</option>
+                  <option value="05">May</option>
+                  <option value="06">June</option>
+                  <option value="07">July</option>
+                  <option value="08">August</option>
+                  <option value="09">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12" >December</option>
+                 </select>    
+				 </label>
+                <label>Day<input class="birthday" maxlength="2" name="day"  placeholder="Day" required=""></label>
+                <label>Year <input class="birthyear" maxlength="4" name="year" placeholder="Year" required=""></label>
+              </fieldset>
+  
+            <select class="select-style gender" name="gender">
+            <option value="select">I am..</option>
+            <option value="m">Male</option>
+            <option value="f">Female</option>
+            <option value="others">Other</option>
+            </select><br><br>
+            
+            <p class="contact"><label for="phone">Mobile</label></p> 
+            <input id="phone" name="mblno" placeholder="phone number" required="" type="text"> 
+			
+			 <p class="contact"><label for="phone">Disease</label></p> 
+            <input id="" name="disease" placeholder="disease" required="" type="text"> 
+			
+			<input type="file" name="img"><br />
+            <input class="buttom" name="submit" id="submit" tabindex="5" value="INSERT" type="submit"> 
+		</form><br />
+    </div>
+	</div><br />
+</body>
+</html>

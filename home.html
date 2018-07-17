@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>H M S</title>
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<script src="js/jquery.min.js"></script>
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<style>
+	body{width:1536px;background-color:white;}
+		iframe{width:500px;height:550px;border:none;}
+		.l{position:absolute;left:20px;top:150px}
+		.m{position:absolute;left:520px;top:150px}
+		.r{position:absolute;left:1020px;top:150px}
+	</style>
+	<script src="api/jquery.js"></script>
+	<script>
+	$(document).ready(function(){
+		var i;
+		var day=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+		var a=new Date();
+		var b=a.getDay();
+		var c=a.getDate();
+		var d=a.getMonth()+1;
+		var e=a.getFullYear();
+		var f=a.getHours();
+		var g=a.getMinutes();
+		var h=a.getSeconds();
+		/*
+		if(f>11)
+		{
+		var n="pm";
+		}
+		else
+		{
+		var n="am";
+		}
+		if(f==0 && n=="am")
+		{
+		f=f+12;
+		}
+		if(f>12 && n=="pm")
+		{
+		f=f-12;
+		}
+		*/
+		var text=e+"/"+d+"/"+c+" "+f+":"+g;		
+		$("#timeslot").attr("src","APPOINTMENT/view_2.php?timedate="+text);
+		//alert($("#timeslot").attr("src"));
+
+	});
+	</script>
+</head>
+<body>
+<marquee behavior="alternate" style='color:gold;font-size:50px;font-weight:bold;font-family:algerian'> ONLINE APPOINTMENT FOR TREATMENT </marquee>
+<input class="buttom" name="submit" id="submit" tabindex="5" value="LOG OUT" type="submit">
+		<div class="container">
+	<div class='l'>
+	<h2><a href="DOCTOR/" style='font-weigth:100;font-size:15px;text-decoration:none'><img src="images/doctor.jpg"  width="80px" height="80px"><br />Click here<a></h2><br />
+		<iframe src="TIME/doctor.php" ></iframe>
+	</div>
+	<div class='m'>
+	<h2><a href="PATIENT/" style='font-weigth:100;font-size:15px;text-decoration:none'><img src="images/patient.jpg"  width="80px" height="80px"><br />Click here<a></h2><br />
+		<iframe src="TIME/patient.php" ></iframe>
+	</div>
+	<div class='r'>
+	<h2><a href="APPOINTMENT/" style='font-weigth:100;font-size:15px;text-decoration:none'><img src="images/appointment.jpg"  width="80px" height="80px"><br />Click here</a></h2><br />
+		<iframe style='width:500px;' id='timeslot' ></iframe>
+	</div>
+		</div>
+</body>
+</html>

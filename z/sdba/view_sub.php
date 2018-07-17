@@ -1,0 +1,32 @@
+
+<html>
+<?php include("styl.php"); ?>
+<div id="kk" style='height:350px'>
+<div id="jj">
+<form action="view_sub0.php" method="post"  class="myform" >
+<table class="mytb" >
+<caption>view subject wise:</caption>
+<tr>
+	<th><b>enter year:</b></th>
+	<td><input type="number" required="required" value="2014" name="year" maxlength="4" onfocus="this.value=''" /></td>
+</tr>
+<tr>
+	<th><b>choose branch</b></th>
+	<td><select name="branch" >
+			<option>CS</option>
+			<option>CIVIL</option>
+			<option>EC</option>
+			<option>CP</option>
+		</select>
+	</td>
+</tr>
+<tr>
+	<td colspan="2" >
+		<input type="submit" class="sub" value="submit" />
+	</td>
+</tr>
+</table>
+</form>
+</div>
+</div>
+</html>

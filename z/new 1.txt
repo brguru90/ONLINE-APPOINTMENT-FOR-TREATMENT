@@ -1,0 +1,15 @@
+<?php
+    header("refresh: 3;");
+?>
+
+
+<script>
+							function likes()
+							{
+								var hWndB = window.open('likes.php');
+								location.close(window.self);
+								//window.location.reload('home.php')
+								//hWndA = window.self;
+								//hWndB.onunload = function(){ hWndA.location.reload(); }
+							}
+							</script>

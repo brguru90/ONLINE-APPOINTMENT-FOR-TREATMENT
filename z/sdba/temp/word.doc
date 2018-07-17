@@ -1,0 +1,110 @@
+
+		<style>
+			table{width:90%;}	
+			#ha,#hb{font-size:20px;color:red}
+			#bl,#bc,#br{color:purple}
+			#bl{position:relative;left:5%;top:0px}
+			#bc{position:relative;left:20%;top:0px}
+			#br{position:relative;left:40%;top:0px}
+			@media only screen and (max-width: 1150px)
+			{
+				#br{position:relative;left:30%;top:0px}
+			}
+			@media only screen and (max-width: 1000px)
+			{
+				#bl{position:relative;left:10%;top:0px}
+				#bc{position:relative;left:28%;top:0px}
+				#br{position:relative;left:50%;top:0px}
+			}
+			@media only screen and (max-width: 700px)
+			{
+				#bl{position:relative;left:5%;top:0px}
+				#bc{position:relative;left:20%;top:0px}
+				#br{position:relative;left:40%;top:0px}
+			}
+		</style>
+		
+			<div id='baa'>
+				<center>
+					<h1 id='ha'>ANALYSIS OF RESULT -COURSEWISE</h1>
+					<h2  style='color:green' id='hb'>SEMESTER EXAMINATION  HELD DURING <u>2015</u></h2>
+				</center><br />
+					<b id='bl'>NAME OF THE INSTITUTION:GPT SORAB</b>
+					<b id='bc'>NAME OF THE COURSE:-CS</b>
+					<b id='br'>DATE OF INSPECTION: <u>2015</u></b>
+					<br /><br />
+					<table id='ba'>
+						<tr>
+							<th colspan='2'>SEMESTER</th>
+							<th>NO OF STUDENTS APPEARED</th>
+							<th>No of DISTINCTION </th>
+							<th>No of  I  class</th>
+							<th>No of II class</th>
+							<th>No of Total Pass</th>
+							<th>% age of pass</th>
+							<th colspan='5'>PASSED EXCEPT IN</th>
+							<th>No of students  promoted including total pass</th>
+							<th>%age of promoted Including total pass</th>
+							<th>SMP/ With held cases</th>
+						</tr>
+						<tr>
+							<td id='h'>ODD SEM</td>
+							<td id='h'>EVEN SEM</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td id='h'>1 Sub</td>
+							<td id='h'>2 Sub</td>
+							<td id='h'>3 Sub</td>
+							<td id='h'>4 Sub</td>
+							<td id='h'>TOTAL</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						
+			<tr>
+				<td>1sem</td>
+				<td> </td>
+				<td>3</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0.00%</td>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+				<td>3</td>
+				<td>12</td>
+				<td>0</td>
+				<td>0.00%</td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td>5sem</td>
+				<td> </td>
+				<td>21</td>
+				<td>13</td>
+				<td>8</td>
+				<td>0</td>
+				<td>21</td>
+				<td>100.00%</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>21</td>
+				<td>100.00%</td>
+				<td></td>
+			</tr>
+			
+					</table>
+			<br /><br />
+			</div>
+			

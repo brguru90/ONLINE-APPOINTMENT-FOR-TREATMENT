@@ -1,0 +1,100 @@
+<html>
+<head>
+<title> INSERT </title>
+	<link rel="stylesheet" type="text/css" href="../css/style3.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="../css/demo.css" media="all" />
+	<link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<script src="../js/jquery.min.js"></script>
+	<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body class="bg">
+	<div class="container">
+			<div class="home">
+					<a href="../index.html"><img src="../images/home.png" alt="" /></a>
+			</div>
+			<div class="header-top">
+			<div class="top-menu">
+					<ul>
+					<nav class="cl-effect-13">
+						<li><a href="insert.html">CREATE</a></li>
+						<li><a href="../UPDATE/update.html">UPDATE</a></li>
+						<li><a href="../VIEW/view.html">VIEW</a></li>
+						<li><a href="../DELETE/delete.html">DELETE</a></li>
+					</nav>
+					</ul>
+			</div>
+
+		
+		</div>
+		<div  class="formbg">
+		<marquee behavior="alternate" style='color:Bisque ;font-size:25px;font-weight:bold;font-family:Times new roman'> CREATE NEW RECORD </marquee>
+		<div  class="form">
+    		<form id="contactform" action="insert.php" method="post"  enctype="multipart/form-data"> 
+			
+				<p class="contact"><label for="id">Doctor ID</label></p> 
+    			<input id="" name="id" placeholder="Number" required="" type="text"> 
+									
+    			<p class="contact"><label for="name">Doctor Name</label></p> 
+    			<input id="name" name="name" placeholder="First and last name" required="" tabindex="1" type="text"> 
+    			 
+				 <p class="contact"><label for="father">Father Name</label></p> 
+    			<input type="text" id="name" name="father" placeholder="Father" required="">
+				
+    			<p class="contact"><label for="education">Qualification</label></p> 
+    			<input id="edu" name="quali" placeholder="Education" required="" type="text"> 
+				
+				<p class="contact"><label for="email">Email</label></p> 
+    			<input id="email" name="email" placeholder="Email" required="" type="email"> 
+                
+				<p class="contact"><label for="phone">Specialist</label></p> 
+                <select class="select-style gender" name="exp">
+            <option value="select"> Expert in..</option>
+            <option value="Eye"> Eye </option>
+            <option value="Skin"> Skin </option>
+            <option value="Heart"> Heart </option>
+			<option value="Bone"> Bone </option>
+            </select><br /><br /> 
+                <p class="contact"><label for="repassword">Addrress</label></p> 
+    			<input type="text" id="" name="add" required=""> 
+        
+               <fieldset>
+                 <label>Birthday</label>
+                  <label class="month"> 
+                  <select class="select-style" name="BirthMonth">
+                  <option value="">Month</option>
+                  <option  value="January">January</option>
+                  <option value="February">February</option>
+                  <option value="March" >March</option>
+                  <option value="April">April</option>
+                  <option value="May">May</option>
+                  <option value="June">June</option>
+                  <option value="July">July</option>
+                  <option value="August">August</option>
+                  <option value="September">September</option>
+                  <option value="October">October</option>
+                  <option value="November">November</option>
+                  <option value="December" >December</option>
+                  </label>
+                 </select>    
+                <label>Day<input class="birthday" maxlength="2" name="BirthDay"  placeholder="Day" required=""></label>
+                <label>Year <input class="birthyear" maxlength="4" name="BirthYear" placeholder="Year" required=""></label>
+              </fieldset>
+  
+			<p class="contact"><label for="phone">Gender</label></p> 
+            <select class="select-style gender" name="gender">
+            <option value="select">I am..</option>
+            <option value="m">Male</option>
+            <option value="f">Female</option>
+            <option value="others">Other</option>
+            </select><br><br>
+            
+            <p class="contact"><label for="phone">Mobile</label></p> 
+            <input id="phone" name="phone" placeholder="phone number" required="" type="text"> 
+			<input type="file" name="img"><br /><br />
+            <input class="buttom" name="submit" id="submit" tabindex="5" value="INSERT" type="submit"> 
+		</form>
+    </div>
+	</div>
+	</div>
+</body>
+</html>
